@@ -1,0 +1,41 @@
+module inputgenerator (
+    input inc,
+    input clk,
+    input rst,
+    output out[3][4]
+  ) {
+
+  
+  .clk(clk) {
+    .rst(rst) {
+      dff a;
+    }
+  }
+  
+  
+  const CASES=10;
+  sig b[CASES][3][4];
+  
+  always {
+    b[0]={4h9,4h5,4h3};
+    b[1]={4h2,4h7,4h8};
+    b[2]={4h8,4h6,4h4};
+    b[3]={4h7,4h3,4h9};
+    b[4]={4h6,4h8,4h5};
+    b[5]={4h2,4h5,4h9};
+    b[6]={4h7,4h6,4h8};
+    b[7]={4h9,4h9,4h7};
+    b[8]={4h3,4h7,4h6};
+    b[9]={4h8,4h2,4h5};
+    out = b[a.q];
+    if (inc==1){
+      if (a.q==CASES-1) {
+        out=b[a.q+1];
+        a.d=a.q+1;
+      } else {
+        out=b[0];
+        a.d=0;
+      }  
+    }
+  }
+}

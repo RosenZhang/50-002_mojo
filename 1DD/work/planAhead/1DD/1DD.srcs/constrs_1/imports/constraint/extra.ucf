@@ -1,0 +1,14 @@
+NET "io_sel<4>" LOC = P11 | IOSTANDARD = LVTTL;
+NET "io_sel<5>" LOC = P15 | IOSTANDARD = LVTTL;
+NET "outbutton<0>" LOC = P51 | IOSTANDARD = LVTTL | PULLUP;
+NET "outbutton<1>" LOC = P50 | IOSTANDARD = LVTTL | PULLUP;
+NET "outbutton<2>" LOC = P41 | IOSTANDARD = LVTTL | PULLUP;
+NET "outbutton<3>" LOC = P40 | IOSTANDARD = LVTTL | PULLUP;
+NET "outbutton<4>" LOC = P35 | IOSTANDARD = LVTTL | PULLUP;
+NET "outbutton<5>" LOC = P34 | IOSTANDARD = LVTTL | PULLUP;
+NET "resetbutton" LOC = P33 | IOSTANDARD = LVTTL | PULLUP;
+NET "confirmbutton" LOC = P32 | IOSTANDARD = LVTTL | PULLUP;
+NET "modeswitch<0>" LOC = P30 | IOSTANDARD = LVTTL;
+NET "modeswitch<1>" LOC = P29 | IOSTANDARD = LVTTL;
+NET "ledplayer<0>" LOC = P17 | IOSTANDARD = LVTTL;
+NET "ledplayer<1>" LOC = P16 | IOSTANDARD = LVTTL;
